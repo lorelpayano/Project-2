@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-//Nice job
+
 class App extends Component {
   state = {
     query: ''
@@ -27,8 +27,9 @@ submitting = async (e) => {
 
   let res2 = await axios.get(`http://api.giphy.com/v1/gifs/search?api_key=DJw9IYgU5zke3slpNh5BhLf7ISL13ygm&q=${this.state.query}`)
   console.log(res2)
+
   this.setState({
-    
+    // source: res2.data.data[0].embed_url
   })
 }
 
@@ -37,10 +38,14 @@ submitting = async (e) => {
 
 
   render() {
+
+    console.log(this.state.source)
     return (
       <div>
         <input onChange={this.searching} type= 'text'></input>
         <button onClick={this.submitting}> Submit</button>
+
+        {/* <img src={this.state.source} alt='img_src' /> */}
       </div>
     );
   }
