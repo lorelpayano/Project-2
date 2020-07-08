@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios'
 
 function App() {
   return (
@@ -10,7 +11,12 @@ function App() {
         <p>
           LOREL
 
-          testing!!!!!!!!!
+          Hi im kai
+
+          k
+
+          ibfis
+          
 
           
         </p>
