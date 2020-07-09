@@ -32,8 +32,6 @@ class Products extends Component {
     }
 
 
-
-
     render() {
         return (
             <div>
