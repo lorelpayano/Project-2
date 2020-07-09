@@ -11,32 +11,33 @@ nutritionix.init(YOUR_APP_ID,YOUR_API_KEY);
 
 class App extends Component {
   state = {
-    query: '',
+    query: [],
     source: '',
-    foodData: {}
+    foodData: [],
   }
 
-
-searching = (e) => { 
-  this.setState ({
-    query: e.target.value
+getIngredient = (ingredients) => {
+  console.log(ingredients)
+  this.setState({
+    query: ingredients
   })
-  console.log(e.target.value)
+  // this.submitting(ingredients)
 }
 
-submitting = async (e) => {
+submitting = async () => {
+  let ingredient = this.state.query.map(i => `${i.qty} ${i.name}`).join('\n');
+  console.log(this.state.query, ingredient)
+  let res = await nutritionix.natural.search(ingredient)
+  console.log(res);
 
-  let res = await nutritionix.natural.search(this.state.query)
-    console.log(res);
+
+  // let res2 = await axios.get(`http://api.giphy.com/v1/gifs/search?api_key=DJw9IYgU5zke3slpNh5BhLf7ISL13ygm&q=${this.state.query}`)
+  // console.log(res2)
 
 
-  let res2 = await axios.get(`http://api.giphy.com/v1/gifs/search?api_key=DJw9IYgU5zke3slpNh5BhLf7ISL13ygm&q=${this.state.query}`)
-  console.log(res2)
-
-  
   this.setState({
-    source: res2.data.data[0].id,
-    foodData: res.foods[0]
+    // source: res2.data.data[0].id,
+    foodData: res.foods
   })
 }
 
@@ -48,14 +49,17 @@ submitting = async (e) => {
     return (
       <div>
         <Nutrients foodData={this.state.foodData} />
-        <Products />
-        <input onChange={this.searching} type= 'text'></input>
+        <Products getIngredient={this.getIngredient}/>
+        {/* <input onChange={this.searching} type= 'text'></input> */}
         <button onClick={this.submitting}> Submit</button>
-
-      {
-        this.state.source &&
-        <img src={`https://i.giphy.com/media/${this.state.source}/giphy.webp`} alt='img_src' />
-      }
+        {
+          this.state.foodData[0] &&
+          this.state.foodData.map(food => (
+            <img src={food.photo.highres} style={{width: '120px'}}alt='img_src' />
+          ))
+        }
+        {/* `https://i.giphy.com/media/${this.state.source}/giphy.webp` */}
+      
       </div>
     );
   }
