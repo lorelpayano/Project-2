@@ -37,12 +37,9 @@ submitting = async (e) => {
 }
 
 
-
-
-
   render() {
 
-console.log(this.state.source)
+    console.log(this.state.source)
 
     return (
       <div>
