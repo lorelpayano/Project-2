@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import nutritionix from 'nutritionix-api'
+import Nutrients from './components/Nutrients'
 
 
 const YOUR_APP_ID   = 'b9b8c82e'; // Your APP ID
@@ -46,6 +47,7 @@ console.log(this.state.source)
 
     return (
       <div>
+        <Nutrients />
         <input onChange={this.searching} type= 'text'></input>
         <button onClick={this.submitting}> Submit</button>
 
