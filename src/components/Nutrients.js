@@ -1,14 +1,4 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-import axios from 'axios';
-import nutritionix from 'nutritionix-api'
-
-class Nutrients extends Component {
-
-    displayNutrition = () =>{
-  
-    }
-=======
 import nutritionix from 'nutritionix-api';
 
 class Nutrients extends Component {
@@ -53,18 +43,13 @@ class Nutrients extends Component {
           protein: {this.props.foodData.nf_protein}</p>
     }
       
->>>>>>> 5f084a0691cbc05a1b712b59f393f1e73aa6d725
 
     render() {
         return (
             <div>
-<<<<<<< HEAD
-                
-=======
                 {this.displayNutrients()}
                 {this.props.foodData.food_name}
 
->>>>>>> 5f084a0691cbc05a1b712b59f393f1e73aa6d725
             </div>
         );
     }
