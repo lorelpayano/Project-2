@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import nutritionix from 'nutritionix-api'
 import Nutrients from './components/Nutrients'
+import Products from './components/Products'
 
 
 const YOUR_APP_ID   = 'b9b8c82e'; // Your APP ID
@@ -11,7 +12,8 @@ nutritionix.init(YOUR_APP_ID,YOUR_API_KEY);
 class App extends Component {
   state = {
     query: '',
-    source: ''
+    source: '',
+    foodData: {}
   }
 
 
@@ -33,7 +35,8 @@ submitting = async (e) => {
 
   
   this.setState({
-    source: res2.data.data[0].id
+    source: res2.data.data[0].id,
+    foodData: res.foods[0]
   })
 }
 
@@ -47,7 +50,8 @@ console.log(this.state.source)
 
     return (
       <div>
-        <Nutrients />
+        <Nutrients foodData={this.state.foodData} />
+        <Products />
         <input onChange={this.searching} type= 'text'></input>
         <button onClick={this.submitting}> Submit</button>
 
