@@ -15,7 +15,7 @@ class Products extends Component {
         })
     }
 
-    makeArray = (event) => {
+    enterIngredient = (event) => {
         event.preventDefault()
         console.log("submit")
         let arrayCopy = [...this.state.ingredients]
@@ -46,7 +46,7 @@ class Products extends Component {
         return (
             <div>
                 {this.displayIngredients()}
-                <form onSubmit = {this.makeArray}>
+                <form onSubmit = {this.enterIngredient}>
                 <label htmlFor="pname">Product name:</label>
             
                 <input onChange={this.addingProducts}type="text" name="name" value = {this.state.name} placeholder='ex: pizza' required/>
