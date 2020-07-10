@@ -34,8 +34,8 @@ class Products extends Component {
     displayIngredients = () => {
         return this.state.ingredients.map((eachIngredient) => {
           return (
-             <p> <div>{eachIngredient.name}</div>
-              <div>{eachIngredient.qty}</div> </p>
+             <div key={eachIngredient.name}> <div>{eachIngredient.name}</div>
+              <div>{eachIngredient.qty}</div> </div>
           );
         });
       };
