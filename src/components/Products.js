@@ -23,7 +23,7 @@ class Products extends Component {
             name : this.state.name,
             qty : this.state.qty,
         })
-
+        this.props.getIngredient(arrayCopy)
         this.setState({
             ingredients : arrayCopy,
             name: '',
@@ -40,6 +40,7 @@ class Products extends Component {
         });
       };
 
+
     render() {
         console.log(this.state)
         return (
@@ -48,11 +49,11 @@ class Products extends Component {
                 <form onSubmit = {this.makeArray}>
                 <label htmlFor="pname">Product name:</label>
             
-                <input onChange={this.addingProducts}type="text" name="name" placeholder='ex: pizza' required/>
+                <input onChange={this.addingProducts}type="text" name="name" value = {this.state.name} placeholder='ex: pizza' required/>
                 
                 <label htmlFor="qty">Quantity name:</label>
                 
-                <input onChange={this.addingProducts}type="number" name="qty" placeholder='number' required />
+                <input onChange={this.addingProducts}type="number" name="qty" value = { this.state.qty} placeholder='number' required />
 
                 <button type='submit' id='add'>Add</button>
                 </form> 
