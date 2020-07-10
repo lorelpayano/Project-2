@@ -2,32 +2,6 @@ import React, { Component } from 'react';
 // import nutritionix from 'nutritionix-api';
 
 class Nutrients extends Component {
-    // state = {
-    //     // ndb_no: 21299,
-    //     calories: 0,
-    //     fat: 0,
-    //     saturated_fat: 0,
-    //     cholesterol: 0,
-    //     sodium: 0,
-    //     potassium: 0,
-    //     carbohydrate: 0,
-    //     sugars: 0,
-    //     fiber: 0,
-    //     protein: 0
-    // }
-
-    // submitting = async (e) => {
-      
-    //     let res = await nutritionix.natural.search(this.state.query)
-    //       console.log(res);
-      
-      
-        
-    //     this.setState({
-    //     //   source: res2.data.data[0].id
-    //     })
-    //   }
-
 
     displayNutrients = () => { 
         return <li>
