@@ -28,7 +28,7 @@ getIngredient = (ingredients) => {
 
 
 submitting = async () => {
-  let ingredient = this.state.query.map(i => `${i.qty} ${i.name}`).join('\n');
+  let ingredient = this.state.query.map(i => `${i.qty} ${i.measurement} ${i.name}`).join('\n');
   console.log(this.state.query, ingredient)
   let res = await nutritionix.natural.search(ingredient)
   console.log(res);

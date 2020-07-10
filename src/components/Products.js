@@ -4,6 +4,7 @@ class Products extends Component {
     state = {
         name: '',
         qty: '',
+        measurement: '',
         ingredients: []
     }
 
@@ -22,20 +23,26 @@ class Products extends Component {
         arrayCopy.push({
             name : this.state.name,
             qty : this.state.qty,
+            measurement: this.state.measurement
         })
         this.props.getIngredient(arrayCopy)
         this.setState({
             ingredients : arrayCopy,
             name: '',
             qty: '',
+            measurement: ''
         })
     }
 
     displayIngredients = () => {
         return this.state.ingredients.map((eachIngredient) => {
           return (
-             <div key={eachIngredient.name}> <div>{eachIngredient.name}</div>
-              <div>{eachIngredient.qty}</div> </div>
+             <div key={eachIngredient.name}>
+                <div>{eachIngredient.name}</div>
+                <div>{eachIngredient.qty}</div>
+                <div>{eachIngredient.measurement}</div>
+
+            </div>
           );
         });
       };
@@ -46,6 +53,7 @@ class Products extends Component {
         return (
             <div>
                 {this.displayIngredients()}
+
                 <form onSubmit = {this.enterIngredient}>
                 <label htmlFor="pname">Product name:</label>
             
@@ -54,7 +62,11 @@ class Products extends Component {
                 <label htmlFor="qty">Quantity name:</label>
                 
                 <input onChange={this.addingProducts}type="number" name="qty" value = { this.state.qty} placeholder='number' required />
-
+                <select name="measurement" value={this.state.measurement}onChange={this.addingProducts}>
+                    <option disabled value=''>Select one</option>
+                    <option value="cup">Cup</option>
+                    <option value="spoon">Tbsp</option>
+                </select>
                 <button type='submit' id='add'>Add</button>
                 </form> 
                 
