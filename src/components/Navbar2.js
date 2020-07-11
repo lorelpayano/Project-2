@@ -6,14 +6,13 @@ import {Link} from 'react-router-dom'
 class Navbar2 extends Component {
     render() {
         return (
-            <div>
-                <Link to='/'>Home</Link>
-                <Link to='/recipes'>Recipes</Link>
-                <Link to='/calculator'>Calculate Ingredients</Link>
-            
-
-                       
-            </div>
+            <nav className='nav2'>
+                <ul className='nav2-ul'>
+                    <li><Link className='nav2-links' to='/'>Home</Link></li>
+                    <li><Link className='nav2-links' to='/recipes'>Recipes</Link></li>
+                    <li><Link className='nav2-links' to='/calculator'>Calculate Ingredients</Link></li>
+                </ul>
+            </nav>
         );
     }
 }
