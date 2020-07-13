@@ -10,13 +10,14 @@ class Footer extends Component {
     render() {
         return (
             <div>
-                <footer>
+                <footer class = 'site-footer'>
                 <ul>
                     <li><Link className='footerLinks' to='./ContactUs.js'>Contact Us</Link></li>
                     <li><Link className='footerLinks' to='./FAQ.js'>FAQ</Link></li>
                     <li><Link className='footerLinks' to='./Careers.js'>Careers</Link></li>
                     <li><Link className='footerLinks' to='./MeetTheTeam.js'>Meet The Team</Link></li>
                 </ul>
+            <hr></hr>
                 </footer>
             </div>
         );

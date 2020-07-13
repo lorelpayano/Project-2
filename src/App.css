@@ -128,3 +128,112 @@ footer li {
 footer .footerLinks {
 color: black;
 }
+
+.site-footer{
+  background-color: #485563;
+  padding:45px 0 100px;
+  
+}
+
+.container::after, 
+    .row::after { 
+        content: ""; 
+        clear: both; 
+        display: table; 
+    } 
+.button { 
+      border: none; 
+      padding: 8px; 
+      color: white; 
+      background-color: #449D44; 
+      text-align: center; 
+      cursor: pointer; 
+      width: 100%; 
+      margin-bottom: 10px; 
+  } 
+
+.button:hover { 
+    background-color: green; 
+}
+
+.container { 
+  padding: 0 16px; 
+} 
+
+.container::after, 
+        .row::after { 
+            content: ""; 
+            clear: both; 
+            display: table; 
+        } 
+.column { 
+          float: left; 
+          width: 33%; 
+          margin-bottom: 16px; 
+          padding: 2px 10px; 
+      } 
+
+#gfg { 
+        float: none; 
+        margin: auto; 
+    }
+
+.card { 
+      background-color: gray; 
+      border: 1px solid black; 
+  }
+
+  fieldset {
+    border: medium none;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+
+  .container2 {
+    max-width:400px;
+    width:100%;
+    margin:0 auto;
+    position:relative;
+  }
+
+  #contact {
+    background:#9B9898;
+    padding:25px;
+    margin:50px 0;
+  }
+
+  #contact h3 {
+    color: #48CE23;
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  #contact h4 {
+    margin:5px 0 15px;
+    display:block;
+    font-size:13px;
+  }
+
+  fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+
+  #contact button[type="submit"] {
+    cursor:pointer;
+    width:100%;
+    border:none;
+    background:#338C1A;
+    color:#FFF;
+    margin:0 0 5px;
+    padding:10px;
+    font-size:15px;
+  }
+
+  
