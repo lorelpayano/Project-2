@@ -11,6 +11,7 @@ class Navbar2 extends Component {
                     <li><Link className='nav2-links' to='/'>Home</Link></li>
                     <li><Link className='nav2-links' to='/recipes'>Recipes</Link></li>
                     <li><Link className='nav2-links' to='/calculator'>Calculate Ingredients</Link></li>
+                    <li><Link className='nav2-links' to= '/exercise'>Exercise</Link></li>
                 </ul>
             </nav>
         );
