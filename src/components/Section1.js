@@ -9,7 +9,8 @@ class Section1 extends Component {
         return (
             <section className="section1">
                 <div className='sec1-div'>
-                IS THIS WORKING?
+                <h2>Welcome!</h2>
+                <p></p>
 
                 <li><Link className='sec1-links' to='/recipes'>Recipes</Link></li>
                 <li><Link className='sec1-links' to='/calculator'>Calculate Ingredients</Link></li>
