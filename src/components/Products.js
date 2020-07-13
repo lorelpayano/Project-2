@@ -37,11 +37,10 @@ class Products extends Component {
     displayIngredients = () => {
         return this.state.ingredients.map((eachIngredient) => {
           return (
-             <div key={eachIngredient.name}>
+             <div className='products' key={eachIngredient.name}>
                 <div>{eachIngredient.name}</div>
                 <div>{eachIngredient.qty}</div>
                 <div>{eachIngredient.measurement}</div>
-
             </div>
           );
         });

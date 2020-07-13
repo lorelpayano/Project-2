@@ -57,13 +57,13 @@ enterFood = (event) => {
 displayRecipes = () => {
     return this.state.recipeList.map((eachRecipe) => {
         return (
-        <div key={eachRecipe.recipe.url}>
+        <div className='recipes' key={eachRecipe.recipe.url}>
 
-        <h5>{eachRecipe.recipe.label}</h5>
+        <h3>{eachRecipe.recipe.label}</h3>
         <p>{eachRecipe.recipe.dietLabels}</p>
         <p>{eachRecipe.recipe.healthLabels}</p>
         <a target="_blanc" href={eachRecipe.recipe.url}>
-        <img src={eachRecipe.recipe.image} alt='img'/>
+        <img className='recipe-image' src={eachRecipe.recipe.image} alt='img'/>
         </a>
         {/* <p>
         {eachRecipe.recipe?.ingredients.map((eachIngredient) => { 
@@ -73,7 +73,7 @@ displayRecipes = () => {
             })
         };
         </p> */}
-        <p>{eachRecipe.recipe.ingredientLines}</p>
+        <p className='ingredients'>{eachRecipe.recipe.ingredientLines}</p>
         <p>{eachRecipe.recipe.source}</p>
         <p>{eachRecipe.recipe.totalTime}</p>
 
@@ -88,13 +88,13 @@ displayRecipes = () => {
 
     render() {
         return (
-            <div>
-            <h1>RECIPES PAGE</h1>
+            <div className='recipesPage'>
+            <h1>RECIPES</h1>
 
                 <form onSubmit = {this.submitRecipeSearch}>               
-                <label htmlFor="search">Search Recipes:</label>
+                <label htmlFor="search"></label>
                 {/* <input onChange={this.addingFoods} type="text" name="searchName" value = {this.state.searchName} placeholder='ex: grilled chicken' required /> */}
-                <input onChange={this.recipeSearch} type="text" value ={this.state.query2}name="searchName" placeholder='ex: grilled chicken' required />
+                <input onChange={this.recipeSearch} className='searchBar' type="text" value ={this.state.query2}name="searchName" placeholder='Search for a food, brand, or ingredient' required />
                 <button type='submit' id='search'> Search</button>
                 </form> 
                 
