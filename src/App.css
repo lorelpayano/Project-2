@@ -145,9 +145,7 @@ color: black;
   text-align: center;
 }
 
-.products {
-  /* width: 200px; */
-}
+
 
 .ingredients {
   width: 600px;
@@ -287,4 +285,29 @@ color: black;
     padding: 5px;
   }
 
+  .content {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    padding: 0 60px 0 0;
+  }
+
+  .question {
+    position: relative;
+    background: #338C1A;
+    margin: 0;
+    padding: 10px 10px 10px 50px;
+    display: block;
+    width:100%;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px grey;
+  }
+
+  .answers {
+    background: #999;
+    padding: 0px 15px;
+    margin: 5px 0;
+    position: relative;
+  }
   
