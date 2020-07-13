@@ -8,7 +8,7 @@ class ContactUs extends Component {
 <div class="container2">  
   <form id="contact">
     <h3>Contact Us!</h3>
-    <h4>Contact us today, and get reply with in 24 hours!</h4>
+    <h4>Contact us today, and get reply soon!</h4>
     <fieldset>
       <input placeholder="Your name" type="text" required autofocus></input>
     </fieldset>

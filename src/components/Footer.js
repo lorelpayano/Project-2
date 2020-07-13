@@ -12,10 +12,10 @@ class Footer extends Component {
             <div>
                 <footer class = 'site-footer'>
                 <ul>
-                    <li><Link className='footerLinks' to='./ContactUs.js'>Contact Us</Link></li>
-                    <li><Link className='footerLinks' to='./FAQ.js'>FAQ</Link></li>
-                    <li><Link className='footerLinks' to='./Careers.js'>Careers</Link></li>
-                    <li><Link className='footerLinks' to='./MeetTheTeam.js'>Meet The Team</Link></li>
+                    <li><Link className='footerLinks' to='./ContactUs'>Contact Us</Link></li>
+                    <li><Link className='footerLinks' to='./FAQ'>FAQ</Link></li>
+                    <li><Link className='footerLinks' to='./Careers'>Careers</Link></li>
+                    <li><Link className='footerLinks' to='./MeetTheTeam'>Meet The Team</Link></li>
                 </ul>
             <hr></hr>
                 </footer>

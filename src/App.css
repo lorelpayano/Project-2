@@ -135,6 +135,8 @@ color: black;
   
 }
 
+/* Meet the Team CSS */
+
 .container::after, 
     .row::after { 
         content: ""; 
@@ -191,6 +193,8 @@ color: black;
     width: 100%;
   }
 
+ /* Contact Us CSS */
+
   .container2 {
     max-width:400px;
     width:100%;
@@ -236,4 +240,14 @@ color: black;
     font-size:15px;
   }
 
-  
+  /* FAQ Page CSS */
+
+  .title {
+    margin: 0 auto;
+    width: 100vw;
+    font-size: 150%;
+    text-align: center;
+    margin-top: 3em;
+    padding: 5px;
+  }
+
