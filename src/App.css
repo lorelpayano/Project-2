@@ -91,7 +91,7 @@
   top: 0;
   display: flex;
   margin: 70px auto 10px auto;
-  padding: 0 10px;
+  padding: 10px 10px;
 
 }
 
@@ -114,6 +114,10 @@
   width: 10px;
 }
 
+.nav2 a:hover {
+  color: white
+}
+
 
 footer ul {
   display: flex;
@@ -129,6 +133,38 @@ footer .footerLinks {
 color: black;
 }
 
+.searchBar {
+  width: 240px
+}
+
+#search {
+  background-color: none;
+}
+
+.recipesPage {
+  text-align: center;
+}
+
+.products {
+  /* width: 200px; */
+}
+
+.ingredients {
+  width: 600px;
+  text-align: center;
+  display: flex;
+  align-self: center;
+  margin: auto;
+}
+
+.recipe-image {
+  /* size: 10px */
+  padding: 10px;
+}
+
+.recipes {
+  padding: 10px;
+}
 .site-footer{
   background-color: #485563;
   padding:45px 0 100px;
@@ -251,3 +287,4 @@ color: black;
     padding: 5px;
   }
 
+  
