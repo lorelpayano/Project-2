@@ -9,8 +9,11 @@ class Navbar1 extends Component {
         return (
             <nav className='nav1'>
             <div className='logoArea'>
+            <Link to='/'>
             <img className='logo' src={logo} alt='logo'/>
+            </Link>
             <p className='logo'>infiniT Nutrition</p>
+            
             </div>
             <ul className='nav1-ul'>
                 <li><Link className='nav1-links' to='/login'>Log In</Link></li>
