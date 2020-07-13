@@ -12,16 +12,16 @@ class FAQ extends Component {
                 <div class="content">
                     <div>
                             <label class="question">
-                            What is this page?
+                            How do I find the nutritional facts in what I am eating?
                             </label>
                             <div class="answers">
-                            This is the FAQ's page, so that your questions can be answered about our website!
+                            Once you go to the Calculate Ingredients section of the page, you will then be able to add different ingredients or specific foods to your list. Once you add everything, just hit submit and you will get your results back!
                             </div>
                             <label class="question">
-                            Who made this page?
+                            How do I get recipes back?
                             </label>
                             <div class="answers">
-                            Lorel, Luis and Kai made this page
+                            Once you go to the Recipes section of the page, you will then be able to type in any food you want in the search bar. Once you press submit, you will get results of diffrent meals along with the the ingredients needed and other information you can find.
                             </div>
                             <label class="question">
                             Why was this page made?

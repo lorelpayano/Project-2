@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ContactUs extends Component {
     render() {
         return (
-<body>
+<body id = "ContactUsColor">
 
 <div class="container2">  
   <form id="contact">
