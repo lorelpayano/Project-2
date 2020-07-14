@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import nutritionix from 'nutritionix-api'
+import nutritionix from '../nutritionix'
 import Nutrients from './Nutrients'
 import Products from './Products'
 // import Recipes from './components/Recipes'
@@ -9,6 +9,7 @@ import Products from './Products'
 const YOUR_APP_ID   = 'b9b8c82e'; // Your APP ID
 const YOUR_API_KEY  = 'c5e6d5a953ec1e27906aa91050035dea'; // Your KEY
 nutritionix.init(YOUR_APP_ID,YOUR_API_KEY);
+
 
 class Calculator extends Component {
   state = {
@@ -25,14 +26,18 @@ getIngredient = (ingredients) => {
   // this.submitting(ingredients)
 }
 
-
+testExercise = async () => {
+    const exercise = '30 min yoga';
+    const res = await nutritionix.exercise.search(exercise);
+    console.log(res)
+}
 
 submitting = async () => {
-  let ingredient = this.state.query.map(i => `${i.qty} ${i.measurement} ${i.name}`).join('\n');
+  const ingredient = this.state.query.map(i => `${i.qty} ${i.measurement} ${i.name}`).join('\n');
   console.log(this.state.query, ingredient)
-  let res = await nutritionix.natural.search(ingredient)
+  const res = await nutritionix.natural.search(ingredient)
   console.log(res);
-
+  this.testExercise()
 
   // let res2 = await axios.get(`http://api.giphy.com/v1/gifs/search?api_key=DJw9IYgU5zke3slpNh5BhLf7ISL13ygm&q=${this.state.query}`)
   // console.log(res2)

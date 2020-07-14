@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 
 class Recipes extends Component {
     state = {
@@ -97,6 +97,8 @@ displayRecipes = () => {
                 <input onChange={this.recipeSearch} className='searchBar' type="text" value ={this.state.query2}name="searchName" placeholder='Search for a food, brand, or ingredient' required />
                 <button type='submit' id='search'> Search</button>
                 </form> 
+
+                <button>REFRESH</button>
                 
                 {this.displayRecipes()}
 

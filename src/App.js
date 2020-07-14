@@ -12,16 +12,19 @@ import MeetTheTeam from './components/MeetTheTeam'
 import Careers from './components/Careers'
 import Home from './components/Home'
 import './App.css'
-
+import Footer from './components/Footer';
+import Exercise from './components/Exercise'
 
 class App extends Component {
   render() {
     return (
       <div>
         
-
+      
       <Navbar1 />
       <Navbar2 />
+      
+      
 
       
 
@@ -30,6 +33,7 @@ class App extends Component {
           <Route exact path='/' render={() => <Home/>} />
           <Route exact path='/recipes' render={() => <Recipes/>} />
           <Route exact path='/calculator' render={() => <Calculator/>} />
+          <Route exact path='/exercise' render={() => <Exercise/>} />
           <Route exact path='/login' render={() => <LogIn/>} />
           <Route exact path='/signup' render={() => <SignUp/>} />
           <Route exact path='/contactus' render={() => <ContactUs/>} />
@@ -39,6 +43,7 @@ class App extends Component {
 
 
         </Switch>
+        <Footer />
       </div>
     );
   }
