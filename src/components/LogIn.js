@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 class LogIn extends Component {
     render() {
         return (
+            <section className = 'sections'>
             <div>
                 <form action="action_page.php" method="post">
                     <div class="imgcontainer">
@@ -28,6 +29,8 @@ class LogIn extends Component {
                     </div>
                 </form>
             </div>
+            </section>
+
         );
     }
 }

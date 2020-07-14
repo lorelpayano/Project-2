@@ -3,9 +3,11 @@ import React, { Component } from 'react';
 class SignUp extends Component {
     render() {
         return (
-            <div>
+            <section className = 'sections'>
+                <div>
                 
-            </div>
+                </div>
+            </section>
         );
     }
 }

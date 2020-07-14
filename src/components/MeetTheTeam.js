@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 class MeetTheTeam extends Component {
     render() {
         return (
+        <section className = 'sections'>
             <div>
                 <body>
                  <h1>Meet The Team Page</h1> 
@@ -54,6 +55,8 @@ class MeetTheTeam extends Component {
                 </div>
                 </body>
             </div>
+        </section>
+
         );
     }
 }
