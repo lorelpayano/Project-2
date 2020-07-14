@@ -69,6 +69,7 @@ ul {
   min-height: 460px;
   padding: 10px;
   margin: 10% auto 0 auto;
+  width: 100%;
 }
 
 .sec1-div {
@@ -497,16 +498,21 @@ fieldset {
     font-size: 20px;
   }
 
+
   .section-calc {
-    /* margin: auto; */
+    /* margin: auto 0; */
     display: flex;
-    margin: ;
+    justify-content: space-around;
+    padding: 0 350px;
   }
 
-  .calc-form {
-    /* margin: 0 auto; */
-  }
+.calc-buttons {
+  text-align: center;
+  margin: 0px 0px;
+}
 
   .section-exercise {
     text-align: center;
   }
+
+  

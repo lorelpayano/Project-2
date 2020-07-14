@@ -60,10 +60,19 @@ refreshPage() {
 
     return (
         <section className = 'sections'>
-            <Nutrients foodData={this.state.foodData} />
-
             <div className='section-calc'>
-            <Products getIngredient={this.getIngredient}/>
+                <div>
+                <Products getIngredient={this.getIngredient}/>
+                <div className= 'calc-buttons'>
+                    <button onClick={this.submitting}> Submit</button>
+                    <button onClick={this.refreshPage}>Refresh</button>
+                    </div>
+                </div>
+                <div>
+                <Nutrients foodData={this.state.foodData} />
+                </div>
+            </div>
+
 
             {
             this.state.foodData[0] &&
@@ -71,9 +80,8 @@ refreshPage() {
             <img key={food.photo.highres} src={food.photo.highres} style={{width: '120px'}}alt='img_src' />
             ))
             }
-            </div>
-            <button onClick={this.submitting}> Submit</button>
-            <button onClick={this.refreshPage}>Refresh</button>
+            
+
         </section>
     );
   }
