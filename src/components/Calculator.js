@@ -60,13 +60,11 @@ refreshPage() {
 
     return (
         <section className = 'sections'>
-            <div className='section-calc'>
             <Nutrients foodData={this.state.foodData} />
+
+            <div className='section-calc'>
             <Products getIngredient={this.getIngredient}/>
-            {/* <Recipes /> */}
-            {/* <input onChange={this.searching} type= 'text'></input> */}
-            <button onClick={this.submitting}> Submit</button>
-            <button onClick={this.refreshPage}>Refresh</button>
+
             {
             this.state.foodData[0] &&
             this.state.foodData.map(food => (
@@ -74,6 +72,8 @@ refreshPage() {
             ))
             }
             </div>
+            <button onClick={this.submitting}> Submit</button>
+            <button onClick={this.refreshPage}>Refresh</button>
         </section>
     );
   }

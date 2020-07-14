@@ -9,34 +9,34 @@ class Nutrients extends Component {
             <td className = 'table-header'>Nutrition Facts</td>
             </tr>
             <tr>
-                <td>Calories: {this.props.foodData.reduce((a,v) => a+=+v.nf_calories,0).toFixed(2)}</td>
+                <td><b>Calories:</b> {this.props.foodData.reduce((a,v) => a+=+v.nf_calories,0).toFixed(2)} g</td>
             </tr>
             <tr>
-                <td>Fat: {this.props.foodData.reduce((a,v) => a+=+v.nf_total_fat,0).toFixed(2)}</td>
+                <td><b>Fat:</b> {this.props.foodData.reduce((a,v) => a+=+v.nf_total_fat,0).toFixed(2)} g</td>
             </tr>
             <tr>
-                <td>Saturated_fat: {this.props.foodData.reduce((a,v) => a+=+v.nf_saturated_fat,0).toFixed(2)}</td>
+                <td><b>Saturated Fat:</b> {this.props.foodData.reduce((a,v) => a+=+v.nf_saturated_fat,0).toFixed(2)} g</td>
             </tr>
             <tr>
-                <td>Cholesterol: {this.props.foodData.reduce((a,v) => a+=+v.nf_cholesterol,0).toFixed(2)}</td>
+                <td><b>Cholesterol:</b> {this.props.foodData.reduce((a,v) => a+=+v.nf_cholesterol,0).toFixed(2)} mg</td>
             </tr>
             <tr>
-                <td>Sodium: {this.props.foodData.reduce((a,v) => a+=+v.nf_sodium,0).toFixed(2)}</td>
+                <td><b>Sodium:</b> {this.props.foodData.reduce((a,v) => a+=+v.nf_sodium,0).toFixed(2)} mg</td>
             </tr>
             <tr>
-                <td>Potassium: {this.props.foodData.reduce((a,v) => a+=+v.nf_potassium,0).toFixed(2)}</td>
+                <td><b>Potassium:</b> {this.props.foodData.reduce((a,v) => a+=+v.nf_potassium,0).toFixed(2)} mg</td>
             </tr>
             <tr>
-            <td>Carbohydrate: {this.props.foodData.reduce((a,v) => a+=+v.nf_total_carbohydrate,0).toFixed(2)}</td>
+            <td><b>Carbohydrate:</b> {this.props.foodData.reduce((a,v) => a+=+v.nf_total_carbohydrate,0).toFixed(2)} g</td>
             </tr>
             <tr>
-            <td>Sugars: {this.props.foodData.reduce((a,v) => a+=+v.nf_sugars,0).toFixed(2)}</td>
+            <td><b>Sugars:</b> {this.props.foodData.reduce((a,v) => a+=+v.nf_sugars,0).toFixed(2)} g</td>
             </tr>
             <tr>
-                <td>Fiber: {this.props.foodData.reduce((a,v) => a+=+v.nf_dietary_fiber,0).toFixed(2)}</td>
+                <td><b>Fiber:</b> {this.props.foodData.reduce((a,v) => a+=+v.nf_dietary_fiber,0).toFixed(2)} g</td>
             </tr>
             <tr>
-                <td>Protein: {this.props.foodData.reduce((a,v) => a+=+v.nf_protein, 0).toFixed(2)}</td>
+                <td><b>Protein:</b> {this.props.foodData.reduce((a,v) => a+=+v.nf_protein, 0).toFixed(2)} g</td>
             </tr>
         </table>
 

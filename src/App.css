@@ -223,8 +223,6 @@ footer .footerLinks {
   text-align: center;
 }
 
-
-
 .ingredients {
   width: 600px;
   text-align: center;
@@ -443,8 +441,39 @@ fieldset {
     position: relative;
   }
 
+  #ContactUsColor{
+    background-color: greenyellow;
+  }
+  
+  /* Goals Page CSS */
+
+  .success{
+    width: 100vw;
+    padding: 100px;
+    text-align: center;
+  }
+
+  #general-information .text{
+    font-size:2em;
+    font-weight:100;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .containerGoals{
+    width:1200px;
+    margin: 0 auto;
+    padding: 75px 0;
+  }
+  .col{
+    float:left;
+  }
+  .col-3{
+    width:30%;
+  }
   .calc-table {
-    width: 180px
+    width: 180px;
+    font-family: 'Arimo', sans-serif;
   }
 
   .calc-table td {
@@ -452,9 +481,20 @@ fieldset {
   }
   
   .calc-table th {
-    border-bottom: 4px solid black;
+    border-bottom: 1px solid black;
   }
 
   .table-header {
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+
+  .section-calc {
+    /* margin: auto; */
+    display: flex;
+    margin: ;
+  }
+
+  .calc-form {
+    /* margin: 0 auto; */
   }
