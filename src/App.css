@@ -441,6 +441,36 @@ fieldset {
     position: relative;
   }
 
+  #ContactUsColor{
+    background-color: greenyellow;
+  }
+  
+  /* Goals Page CSS */
+
+  .success{
+    width: 100vw;
+    padding: 100px;
+    text-align: center;
+  }
+
+  #general-information .text{
+    font-size:2em;
+    font-weight:100;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .containerGoals{
+    width:1200px;
+    margin: 0 auto;
+    padding: 75px 0;
+  }
+  .col{
+    float:left;
+  }
+  .col-3{
+    width:30%;
+  }
   .calc-table {
     width: 180px;
     font-family: 'Arimo', sans-serif;
