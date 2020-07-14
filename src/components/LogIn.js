@@ -3,9 +3,12 @@ import React, { Component } from 'react';
 class LogIn extends Component {
     render() {
         return (
-            <div>
+            <section className = 'sections'>
+                <div>
                 
-            </div>
+                </div>
+            </section>
+
         );
     }
 }

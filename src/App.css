@@ -38,14 +38,37 @@
   }
 } */
 
+
+/* .header, .footer, .main {
+  display: flex;
+}
+ul {
+  display: flex
+}
+
+.header {
+  height: 15vh;
+}
+.main {
+  height: 75vh;
+}
+.footer {
+  height: 10vh;
+} */
+
 .section1 {
   background-image: url(./images/NordinNutrition.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   /* width: 100%; */
-  height: 550px;
+  height: 620px;
   padding: 10px;
-  margin: 8.6% auto 0 auto;
+  margin: 6.3% auto 0 auto;
+}
+.sections {
+  min-height: 460px;
+  padding: 10px;
+  margin: 10% auto 0 auto;
 }
 
 .sec1-div {
@@ -53,9 +76,9 @@
   background-color: white;
   width: 500px;
   height: 200px;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   /* padding: 250px; */
-  /* margin: auto auto; */
+  margin: auto auto;
 }
 
 .section1 li {
@@ -84,6 +107,7 @@
   position: fixed;
   top: 0;
   display: flex;
+  background-color: white;
 }
 
 .nav1-ul {
@@ -119,9 +143,10 @@
   position: fixed;
   top: 0;
   display: flex;
-  margin: 50px auto 0 auto;
+  margin: 70px auto 0 auto;
   padding: 10px 10px;
   position: fixed;
+  background-color: white;
 }
 
 .nav2-ul {
@@ -140,6 +165,7 @@
 
 .nav2-links {
   color: black;
+  font-weight: bold;
   width: 10px;
   text-decoration: none;
 }
@@ -156,11 +182,11 @@
 .site-footer {
   /* background-color:rgb(54, 53, 53); */
   border-top: 1px solid black;
-  padding: 10px;
-  /* position: fixed; */
+  padding: 10px 10px 0 10px;
+  position: sticky;
   bottom: 0;
   width: 100%;
-  height: 40px;
+  /* height: 40px; */
 }
 
 footer ul {
@@ -176,8 +202,13 @@ footer li {
 
 footer .footerLinks {
   color: black;
-  font-weight: bold;
   text-decoration: none;
+  font-size: 14px;
+}
+
+.footerLogo {
+  margin: 0px 20px;
+  display: flex;
 }
 
 .searchBar {
@@ -209,11 +240,6 @@ footer .footerLinks {
 
 .recipes {
   padding: 10px;
-}
-.site-footer{
-  /* background-color: #485563; */
-  padding:45px 0 100px;
-  
 }
 
 /* Meet the Team CSS */
@@ -416,4 +442,19 @@ fieldset {
     margin: 5px 0;
     position: relative;
   }
+
+  .calc-table {
+    width: 180px
+  }
+
+  .calc-table td {
+    border-bottom: 1px solid black;
+  }
   
+  .calc-table th {
+    border-bottom: 4px solid black;
+  }
+
+  .table-header {
+    font-weight: bold;
+  }

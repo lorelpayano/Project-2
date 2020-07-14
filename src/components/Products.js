@@ -50,16 +50,13 @@ class Products extends Component {
     render() {
         console.log(this.state)
         return (
-            <div>
+            <section className = 'sections'>
+            <div className='section-products'>
                 {this.displayIngredients()}
-
                 <form onSubmit = {this.enterIngredient}>
                 <label htmlFor="pname">Product name:</label>
-            
                 <input onChange={this.addingProducts}type="text" name="name" value = {this.state.name} placeholder='ex: pizza' required/>
-                
                 <label htmlFor="qty">Quantity name:</label>
-                
                 <input onChange={this.addingProducts}type="number" name="qty" value = { this.state.qty} placeholder='number' required />
                 <select name="measurement" value={this.state.measurement}onChange={this.addingProducts}>
                     <option disabled value=''>Select one</option>
@@ -68,8 +65,10 @@ class Products extends Component {
                 </select>
                 <button type='submit' id='add'>Add</button>
                 </form> 
-                
             </div>
+
+            </section>
+
         );
     }
 }
