@@ -73,14 +73,12 @@ enterExercise = (event) => {
 displayExercise = () => {
     return this.state.exerciseList.map((eachExercise) => {
         return (
-        <section className = 'sections'>
         <div className='section-exercise' key={eachExercise.exercises[0].name}>
         <h3>{eachExercise.exercises[0].duration_min}</h3>
         <p>{eachExercise.exercises[0].nf_calories}</p>
         <p>{eachExercise.exercises[0].healthLabels}</p>
         <p><img className='exercise-image' src={eachExercise.exercises[0].photo.highres} alt='img'/></p>
         </div>
-        </section>
         );
     })
 }
@@ -94,16 +92,18 @@ displayExercise = () => {
 
     render() {
         return (
-            <div>
+            <section className = 'sections'>
+                <div className = 'section-exercise'>
+                    <form onSubmit = {this.submitExercise}>               
+                    <label htmlFor="search"></label>
+                    <input onChange={this.exerciseSearch} className='searchBar' type="text" value ={this.state.query3}name="exerciseSearch" placeholder='Search any exercise' required />
+                    <button type='submit' id='exerciseSearch'> Search</button>
+                    </form> 
+                    
+                    {this.displayExercise()}
+                </div>
+            </section>
 
-                <form onSubmit = {this.submitExercise}>               
-                <label htmlFor="search"></label>
-                <input onChange={this.exerciseSearch} className='searchBar' type="text" value ={this.state.query3}name="exerciseSearch" placeholder='Search any exercise' required />
-                <button type='submit' id='exerciseSearch'> Search</button>
-                </form> 
-                
-                {this.displayExercise()}
-            </div>
         );
     }
 }

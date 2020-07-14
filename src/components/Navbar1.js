@@ -17,6 +17,7 @@ class Navbar1 extends Component {
             </div>
             <ul className='nav1-ul'>
                 <li><Link className='nav1-links' to='/login'>Log In</Link></li>
+                <br></br>
                 <li><Link className='nav1-links' to= '/signup'>Sign Up</Link></li>
             </ul>
             </nav>
