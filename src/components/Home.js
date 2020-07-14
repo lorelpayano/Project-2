@@ -5,10 +5,13 @@ import Goals from './Goals'
 class Home extends Component {
     render() {
         return (
-            <div>
+            <section>
+            <div className='section-home'>
                 <Section1 />
                 <Goals/>
             </div>
+            </section>
+
         );
     }
 }

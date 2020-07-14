@@ -20,9 +20,10 @@ class App extends Component {
     return (
       <div>
         
-      
+      <div className='header'>
       <Navbar1 />
       <Navbar2 />
+      </div>
       
       
 
@@ -43,7 +44,9 @@ class App extends Component {
 
 
         </Switch>
+        <div className='footer'>
         <Footer />
+        </div>
       </div>
     );
   }

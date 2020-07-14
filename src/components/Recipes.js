@@ -82,30 +82,31 @@ displayRecipes = () => {
     })
 }
 
-
+refreshPage() {
+    window.location.reload(false);
+}
 
 
 
     render() {
         return (
-            <div className='recipesPage'>
-            <h1>RECIPES</h1>
+            <section className = 'sections'>
+                <div className='recipesPage'>
+                    <h1>RECIPES</h1>
+                    <form onSubmit = {this.submitRecipeSearch}>               
+                        <label htmlFor="search"></label>
+                        {/* <input onChange={this.addingFoods} type="text" name="searchName" value = {this.state.searchName} placeholder='ex: grilled chicken' required /> */}
+                        <input onChange={this.recipeSearch} className='searchBar' type="text" value ={this.state.query2}name="searchName" placeholder='Search for a food, brand, or ingredient' required />
+                        <br />
+                        <button type='submit' id='search'> Search</button>
+                        <button onClick={this.refreshPage}>Refresh</button>
 
-                <form onSubmit = {this.submitRecipeSearch}>               
-                <label htmlFor="search"></label>
-                {/* <input onChange={this.addingFoods} type="text" name="searchName" value = {this.state.searchName} placeholder='ex: grilled chicken' required /> */}
-                <input onChange={this.recipeSearch} className='searchBar' type="text" value ={this.state.query2}name="searchName" placeholder='Search for a food, brand, or ingredient' required />
-                <button type='submit' id='search'> Search</button>
-                </form> 
+                    </form>
 
-                <button>REFRESH</button>
-                
-                {this.displayRecipes()}
+                        {this.displayRecipes()}
+                </div>
+            </section>
 
-
-            {/* <button onClick={}>Get Recipes</button> */}
-                
-            </div>
         );
     }
 }

@@ -4,13 +4,14 @@ import React, { Component } from 'react';
 class FAQ extends Component {
     render() {
         return (
-            <div>
-                <div class='title'>
-                    FAQ's Page
-                </div>
-                <br/>
-                <div class="content">
-                    <div>
+            <section className = 'sections'>
+                <div>
+                    <div class='title'>
+                        FAQ's Page
+                    </div>
+                    <br/>
+                    <div class="content">
+                        <div>
                             <label class="question">
                             How do I find the nutritional facts in what I am eating?
                             </label>
@@ -29,9 +30,11 @@ class FAQ extends Component {
                             <div class="answers">
                             We made this page to promote healthy living and healthy eating habits!
                             </div>
+                        </div>
                     </div>
-                </div>
-               </div> 
+                </div> 
+            </section>
+        
             );
     }
 }

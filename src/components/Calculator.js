@@ -48,6 +48,10 @@ submitting = async () => {
     foodData: res.foods
   })
 }
+  
+refreshPage() {
+    window.location.reload(false);
+}
 
 
   render() {
@@ -55,25 +59,22 @@ submitting = async () => {
     console.log(this.state.source)
 
     return (
-      <div>
-        <Nutrients foodData={this.state.foodData} />
-        <Products getIngredient={this.getIngredient}/>
-        {/* <Recipes /> */}
+        <section className = 'sections'>
+            <Nutrients foodData={this.state.foodData} />
 
+            <div className='section-calc'>
+            <Products getIngredient={this.getIngredient}/>
 
-
-
-        {/* <input onChange={this.searching} type= 'text'></input> */}
-        <button onClick={this.submitting}> Submit</button>
-        {
-          this.state.foodData[0] &&
-          this.state.foodData.map(food => (
+            {
+            this.state.foodData[0] &&
+            this.state.foodData.map(food => (
             <img key={food.photo.highres} src={food.photo.highres} style={{width: '120px'}}alt='img_src' />
-          ))
-        }
-        {/* `https://i.giphy.com/media/${this.state.source}/giphy.webp` */}
-      
-      </div>
+            ))
+            }
+            </div>
+            <button onClick={this.submitting}> Submit</button>
+            <button onClick={this.refreshPage}>Refresh</button>
+        </section>
     );
   }
 }
