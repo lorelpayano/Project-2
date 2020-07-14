@@ -448,29 +448,37 @@ fieldset {
   /* Goals Page CSS */
 
   .success{
-    width: 100vw;
-    padding: 100px;
+    width: 100%;
+    padding: 20px 0;
     text-align: center;
+    margin: auto;
   }
 
   #general-information .text{
-    font-size:2em;
-    font-weight:100;
+    font-size: 18px;
+    font-weight: 100;
     text-align: center;
-    margin: 20px 0;
+    /* margin: 20px 0; */
   }
 
   .containerGoals{
-    width:1200px;
-    margin: 0 auto;
-    padding: 75px 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 1200px;
+    height: 300px;
+    margin: auto;
+    padding-top: 20px;
   }
-  .col{
+  /* .col{
     float:left;
-  }
+  } */
   .col-3{
     width:30%;
   }
+
+
+  /* Calculate table */
+
   .calc-table {
     width: 180px;
     font-family: 'Arimo', sans-serif;
@@ -497,4 +505,8 @@ fieldset {
 
   .calc-form {
     /* margin: 0 auto; */
+  }
+
+  .section-exercise {
+    text-align: center;
   }
