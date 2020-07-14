@@ -40,13 +40,14 @@ exerciseSearch = (event) => {
 //     })
 
 submitExercise = async (event) => {
+    event.preventDefault()
     const exercise = this.state.query3;
     console.log(this.state.query3, exercise)
     const res = await nutritionix.exercise.search(exercise);
     console.log(res)
 
     this.setState ({
-        exerciseList: res
+        exerciseList: res.exercises
     })
 }
 
@@ -57,7 +58,6 @@ addExercise = (event) => {
 }
 
 enterExercise = (event) => {
-    event.preventDefault()
     console.log("submit")
     let exerciseCopy = [...this.state.exerciseList]
     exerciseCopy.push({
@@ -71,36 +71,38 @@ enterExercise = (event) => {
 }
 
 displayExercise = () => {
-    return this.state.exerciseList.map((eachExercise) => {
+    return this.state.exerciseList?.map((eachExercise) => {
         return (
-        <div className='section-exercise' key={eachExercise.exercises[0].name}>
-        <h3>{eachExercise.exercises[0].duration_min}</h3>
-        <p>{eachExercise.exercises[0].nf_calories}</p>
-        <p>{eachExercise.exercises[0].healthLabels}</p>
-        <p><img className='exercise-image' src={eachExercise.exercises[0].photo.highres} alt='img'/></p>
+        <div className='section-exercise' key={eachExercise.name}>
+        <p>Burned {eachExercise.nf_calories} calories</p>
+        <p>{eachExercise.healthLabels}</p>
         </div>
         );
     })
 }
 
-// exercises[0].duration_min: 30
-// exercises[0].name: "yoga"
-// exercises[0].nf_calories: 115.5
-// exercises[0].photo: {highres: "https://d2xdmhkmkbyw75.cloudfront.net/exercise/765_highres.jpg", thumb: "https://d2xdmhkmkbyw75.cloudfront.net/exercise/765_thumb.jpg", is_user_uploaded: false}
-
+refreshPage() {
+    window.location.reload(false);
+}
 
 
     render() {
         return (
             <section className = 'sections'>
                 <div className = 'section-exercise'>
+                    <h1>Find out how many calories you burned!</h1>
                     <form onSubmit = {this.submitExercise}>               
                     <label htmlFor="search"></label>
+                    <br />
                     <input onChange={this.exerciseSearch} className='searchBar' type="text" value ={this.state.query3}name="exerciseSearch" placeholder='Search any exercise' required />
+                    <br />
                     <button type='submit' id='exerciseSearch'> Search</button>
+                    
+                    <button onClick={this.refreshPage}>Refresh</button>
+
                     </form> 
                     
-                    {this.displayExercise()}
+                <h3>{this.displayExercise()}</h3>
                 </div>
             </section>
 
