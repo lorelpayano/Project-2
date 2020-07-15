@@ -57,10 +57,10 @@ ul {
 } */
 
 .section1 {
-  background-image: url(./images/NordinNutrition.jpeg);
+  background-image: url(./images/NordinNutritioncopy2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* width: 100%; */
+  width: 100%;
   height: 620px;
   padding: 10px;
   margin: 6.3% auto 0 auto;
@@ -74,12 +74,12 @@ ul {
 
 .sec1-div {
   text-align: center;
-  background-color: white;
-  width: 500px;
+  /* background-color: white; */
+  width: 700px;
   height: 200px;
-  /* opacity: 0.7; */
-  /* padding: 250px; */
-  margin: auto auto;
+  /* opacity: 0.6; */
+  padding-top: 40px;
+  margin: auto;
 }
 
 .section1 li {
@@ -90,6 +90,11 @@ ul {
 
 .sec1-links {
   color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 2px 20px;
+  background-color: rgb(204, 204, 204);
+opacity: 0.8;
 }
 
 .section1 ul {
@@ -109,6 +114,7 @@ ul {
   top: 0;
   display: flex;
   background-color: white;
+  z-index: 100;
 }
 
 .nav1-ul {
@@ -148,6 +154,7 @@ ul {
   padding: 10px 10px;
   position: fixed;
   background-color: white;
+  z-index: 100;
 }
 
 .nav2-ul {
@@ -208,7 +215,7 @@ footer .footerLinks {
 }
 
 .footerLogo {
-  margin: 0px 20px;
+  margin: 20px 20px 0px 20px;
   display: flex;
 }
 
@@ -222,23 +229,51 @@ footer .footerLinks {
 
 .recipesPage {
   text-align: center;
+  /* background-image: url(./images/woodbackground.jpeg); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* opacity: 0.8; */
+  background-color: rgb(235, 233, 233);
+  width: 100%;
+  min-height: 470px;
+  padding: 10px;
+  margin: 1% auto;
 }
 
+.recipe-links {
+  text-decoration: none;
+  color: black;
+} 
+
+.recipe-a {
+color: black;
+}
+
+/* .recipe-a a:hover {
+  color:  rgb(107, 105, 105);
+} */
+
 .ingredients {
-  width: 600px;
+  width: 650px;
   text-align: center;
   display: flex;
   align-self: center;
   margin: auto;
+  border-bottom: 1px solid black;
+  /* padding-bottom: 20px 0; */
 }
 
 .recipe-image {
-  /* size: 10px */
+  width: 200px;
   padding: 10px;
 }
 
 .recipes {
   padding: 10px;
+  /* display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; */
+  /* width: 500px; */
 }
 
 /* Meet the Team CSS */
@@ -481,21 +516,19 @@ fieldset {
   /* Calculate table */
 
   .calc-table {
-    width: 180px;
-    font-family: 'Arimo', sans-serif;
-  }
-
-  .calc-table td {
-    border-bottom: 1px solid black;
-  }
-  
-  .calc-table th {
-    border-bottom: 1px solid black;
+    width: 220px;
+    border: 1px solid black;
   }
 
   .table-header {
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 25px;
+    border-bottom: 9px solid black;
+    text-align: left;
+  }
+
+  .calc-table td {
+    border-bottom: 1px solid black;
   }
 
 
@@ -503,7 +536,9 @@ fieldset {
     /* margin: auto 0; */
     display: flex;
     justify-content: space-around;
-    padding: 0 350px;
+    padding: 20px 350px;
+    font-family: 'Arimo', sans-serif;
+
   }
 
 .calc-buttons {
@@ -748,3 +783,283 @@ fieldset {
     width: 35px;
     height: 35px;
 }
+  .products {
+    list-style-type: none;
+
+  }
+
+  .login {
+    border: 3px solid black;
+    width: 400px;
+    /* padding: 12px 350px;
+    margin: auto; */
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #ddd;
+    outline: none;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px; 
+    
+  }
+
+.login button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    
+  }
+
+  /* .signup {
+    border: 3px solid black;
+    width: 400px;
+    padding: 12px 350px;
+    margin: auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #ddd;
+    outline: none;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+    
+  }
+
+  .signup button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+
+  } */
+
+/* Sign up Code below */
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*:focus {
+  outline: none;
+}
+
+/* body {
+  margin: 0;
+  padding: 0;
+  background: #DDD;
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+} */
+
+#login-box {
+  position: relative;
+  margin: 5% auto;
+  width: 600px;
+  height: 400px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+}
+
+.signup-header {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.or {
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  width: 40px;
+  height: 40px;
+  background: #DDD;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: 40px;
+  text-align: center;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  background: url('https://goo.gl/YbktSj');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 2px 2px 0;
+}
+
+.right .loginwith {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #FFF;
+  text-align: center;
+}
+
+button.social-signin {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+button.social-signin:hover,
+button.social-signin:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin.facebook {
+  background: #32508E;
+}
+
+button.social-signin.twitter {
+  background: #55ACEE;
+}
+
+button.social-signin.google {
+  background: #DD4B39;
+}
+/* Ends here */
+  /* .product-form {
+    /* border: 1px solid black; */
+
+  .nutrient-disclaimer {
+    font-size: 10px;
+  }
+
+  .banner {
+    background-image: url(./images/Nutritionbanner\ copy.jpg);
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 0;
+  }
+
+  .calc-header {
+    position: absolute;
+    color: white;
+    font-size: 45px;
+    padding-left: 100px;
+  }
+  .home-heading {
+    font-size: 35px;
+    text-align: center;
+    width: 280px;
+    color: black;
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  .recipe-banner {
+    background-image: url(./images/shutterstock_722718082-copy-108383.jpg);
+    width: 100%;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 0;
+    filter: blur(8px);
+    -webkit-filter: blur(6px);
+    border-bottom: 1px solid black;
+
+  }
+
+  .recipe-header {
+    position: absolute;
+    color: white;
+    font-size: 55px;
+    margin: 10px 0;
+    font-weight: bold;
+    z-index: 2;
+    text-align: center;
+    letter-spacing: 3px;
+    width: 100%;
+  }

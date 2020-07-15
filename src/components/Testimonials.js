@@ -8,15 +8,14 @@ class Testimonials extends Component {
         return (
 <section class="testimonial text-center">
         <div class = 'backgroundcolor'>
-
+            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
             <div class="heading green-heading">
                 Real Testimonials!
             </div>
-            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
-             
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <div class="testimonial4_slide">
+                            
                             <img src={testimonial1} class="img-circle img-responsive" />
                             <p>"My diet is something I take very seriously. InfiniT Nutrition not only taught me how to live a healthy lifestyle, but it was also such a great resource when I am traveling."</p>
                             <h4>James Donahue</h4>

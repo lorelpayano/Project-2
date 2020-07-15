@@ -35,24 +35,23 @@ class Products extends Component {
     }
 
     displayIngredients = () => {
-        return this.state.ingredients.map((eachIngredient) => {
+        console.log(this.props.foodData)
+        return this.state.ingredients.map((eachIngredient, i) => {
           return (
-             <div className='products' key={eachIngredient.name}>
-                <div>{eachIngredient.name}</div>
-                <div>{eachIngredient.qty}</div>
-                <div>{eachIngredient.measurement}</div>
-            </div>
+             <li className='products' key={eachIngredient.name}>
+                <img src={this.props.foodData[i]?.photo.highres} style={{width: '30px'}} alt=''/> {eachIngredient.qty} {eachIngredient.measurement} {eachIngredient.name}
+            </li>
           );
         });
       };
 
 
     render() {
-        console.log(this.state)
+        console.log(this.props, this.state)
+
         return (
             <section className = 'sections'>
             <div className='section-products'>
-                {this.displayIngredients()}
                 <form className= 'calc-form' onSubmit = {this.enterIngredient}>
                 <label htmlFor="pname">Product name: </label>
                 <br />
@@ -75,6 +74,8 @@ class Products extends Component {
                 <button type='submit' id='add'>Add</button>
                 
                 </form> 
+                {this.displayIngredients()}
+
             </div>
 
             </section>

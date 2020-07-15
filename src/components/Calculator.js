@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import nutritionix from '../nutritionix'
 import Nutrients from './Nutrients'
 import Products from './Products'
+// import banner from '../images/Nutritionbanner.png'
 // import Recipes from './components/Recipes'
 // import {Link, Switch, Route} from 'react-router-dom'
 
@@ -60,26 +61,32 @@ refreshPage() {
 
     return (
         <section className = 'sections'>
+            <div className='banner'>
+            <p className='calc-header'>Healthy lifestyles start here</p>
+            </div>
             <div className='section-calc'>
-                <div>
-                <Products getIngredient={this.getIngredient}/>
-                <div className= 'calc-buttons'>
-                    <button onClick={this.submitting}> Submit</button>
-                    <button onClick={this.refreshPage}>Refresh</button>
-                    </div>
+                <div className='product-form'>
+                <Products getIngredient={this.getIngredient} foodData={this.state.foodData} />
                 </div>
                 <div>
                 <Nutrients foodData={this.state.foodData} />
                 </div>
+                <div className= 'calc-buttons'>
+                    <button onClick={this.submitting}> Submit</button>
+                    <button onClick={this.refreshPage}>Refresh</button>
+                </div>
+                {/* <div>
+                {
+                this.state.foodData[0] &&
+                this.state.foodData.map(food => (
+                <img key={food.photo.highres} src={food.photo.highres} style={{width: '80px'}} alt='img_src' />
+                ))
+                }
+                </div> */}
             </div>
 
 
-            {
-            this.state.foodData[0] &&
-            this.state.foodData.map(food => (
-            <img key={food.photo.highres} src={food.photo.highres} style={{width: '120px'}}alt='img_src' />
-            ))
-            }
+
             
 
         </section>
