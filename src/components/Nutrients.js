@@ -6,7 +6,7 @@ class Nutrients extends Component {
     displayNutrients = () => { 
         return <table className = 'calc-table'>
             <tr>
-            <td className = 'table-header'>Nutrition Facts</td>
+            <th className = 'table-header'>Nutrition Facts</th>
             </tr>
             <tr>
                 <td><b>Calories:</b> {this.props.foodData.reduce((a,v) => a+=+v.nf_calories,0).toFixed(2)} g</td>
@@ -38,6 +38,7 @@ class Nutrients extends Component {
             <tr>
                 <td><b>Protein:</b> {this.props.foodData.reduce((a,v) => a+=+v.nf_protein, 0).toFixed(2)} g</td>
             </tr>
+            <p className='nutrient-disclaimer'> Percent Daily Values are based on a 2000 calorie diet.</p>
         </table>
 
                 // <li>

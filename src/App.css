@@ -57,10 +57,10 @@ ul {
 } */
 
 .section1 {
-  background-image: url(./images/NordinNutrition.jpeg);
+  background-image: url(./images/NordinNutritioncopy2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* width: 100%; */
+  width: 100%;
   height: 620px;
   padding: 10px;
   margin: 6.3% auto 0 auto;
@@ -69,16 +69,17 @@ ul {
   min-height: 460px;
   padding: 10px;
   margin: 10% auto 0 auto;
+  width: 100%;
 }
 
 .sec1-div {
   text-align: center;
-  background-color: white;
-  width: 500px;
+  /* background-color: white; */
+  width: 700px;
   height: 200px;
-  /* opacity: 0.7; */
-  /* padding: 250px; */
-  margin: auto auto;
+  /* opacity: 0.6; */
+  padding-top: 40px;
+  margin: auto;
 }
 
 .section1 li {
@@ -89,6 +90,11 @@ ul {
 
 .sec1-links {
   color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 2px 20px;
+  background-color: rgb(204, 204, 204);
+opacity: 0.8;
 }
 
 .section1 ul {
@@ -108,6 +114,7 @@ ul {
   top: 0;
   display: flex;
   background-color: white;
+  z-index: 100;
 }
 
 .nav1-ul {
@@ -147,6 +154,7 @@ ul {
   padding: 10px 10px;
   position: fixed;
   background-color: white;
+  z-index: 100;
 }
 
 .nav2-ul {
@@ -207,7 +215,7 @@ footer .footerLinks {
 }
 
 .footerLogo {
-  margin: 0px 20px;
+  margin: 20px 20px 0px 20px;
   display: flex;
 }
 
@@ -221,23 +229,51 @@ footer .footerLinks {
 
 .recipesPage {
   text-align: center;
+  /* background-image: url(./images/woodbackground.jpeg); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* opacity: 0.8; */
+  background-color: rgb(235, 233, 233);
+  width: 100%;
+  min-height: 470px;
+  padding: 10px;
+  margin: 1% auto;
 }
 
+.recipe-links {
+  text-decoration: none;
+  color: black;
+} 
+
+.recipe-a {
+color: black;
+}
+
+/* .recipe-a a:hover {
+  color:  rgb(107, 105, 105);
+} */
+
 .ingredients {
-  width: 600px;
+  width: 650px;
   text-align: center;
   display: flex;
   align-self: center;
   margin: auto;
+  border-bottom: 1px solid black;
+  /* padding-bottom: 20px 0; */
 }
 
 .recipe-image {
-  /* size: 10px */
+  width: 200px;
   padding: 10px;
 }
 
 .recipes {
   padding: 10px;
+  /* display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; */
+  /* width: 500px; */
 }
 
 /* Meet the Team CSS */
@@ -448,55 +484,75 @@ fieldset {
   /* Goals Page CSS */
 
   .success{
-    width: 100vw;
-    padding: 100px;
+    width: 100%;
+    padding: 20px 0;
     text-align: center;
+    margin: auto;
   }
 
   #general-information .text{
-    font-size:2em;
-    font-weight:100;
+    font-size: 18px;
+    font-weight: 100;
     text-align: center;
-    margin: 20px 0;
+    /* margin: 20px 0; */
   }
 
   .containerGoals{
-    width:1200px;
-    margin: 0 auto;
-    padding: 75px 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 1200px;
+    height: 300px;
+    margin: auto;
+    padding-top: 20px;
   }
-  .col{
+  /* .col{
     float:left;
-  }
+  } */
   .col-3{
     width:30%;
   }
+
+
+  /* Calculate table */
+
   .calc-table {
-    width: 180px;
-    font-family: 'Arimo', sans-serif;
+    width: 220px;
+    border: 1px solid black;
+  }
+
+  .table-header {
+    font-weight: bolder;
+    font-size: 25px;
+    border-bottom: 9px solid black;
+    text-align: left;
   }
 
   .calc-table td {
     border-bottom: 1px solid black;
   }
-  
-  .calc-table th {
-    border-bottom: 1px solid black;
-  }
 
-  .table-header {
-    font-weight: bolder;
-    font-size: 20px;
-  }
 
   .section-calc {
-    /* margin: auto; */
+    /* margin: auto 0; */
     display: flex;
-    margin: ;
+    justify-content: space-around;
+    padding: 20px 350px;
+    font-family: 'Arimo', sans-serif;
+
   }
 
-  .calc-form {
-    /* margin: 0 auto; */
+.calc-buttons {
+  text-align: center;
+  margin: 0px 0px;
+}
+
+  .section-exercise {
+    text-align: center;
+  }
+
+  .products {
+    list-style-type: none;
+
   }
 
   .login {
@@ -719,3 +775,60 @@ button.social-signin.google {
   background: #DD4B39;
 }
 /* Ends here */
+  .product-form {
+    /* border: 1px solid black; */
+
+  }
+
+  .nutrient-disclaimer {
+    font-size: 10px;
+  }
+
+  .banner {
+    background-image: url(./images/Nutritionbanner\ copy.jpg);
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 0;
+  }
+
+  .calc-header {
+    position: absolute;
+    color: white;
+    font-size: 45px;
+    padding-left: 100px;
+  }
+  .home-heading {
+    font-size: 35px;
+    text-align: center;
+    width: 280px;
+    color: black;
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  .recipe-banner {
+    background-image: url(./images/shutterstock_722718082-copy-108383.jpg);
+    width: 100%;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 0;
+    filter: blur(8px);
+    -webkit-filter: blur(6px);
+    border-bottom: 1px solid black;
+
+  }
+
+  .recipe-header {
+    position: absolute;
+    color: white;
+    font-size: 55px;
+    margin: 10px 0;
+    font-weight: bold;
+    z-index: 2;
+    text-align: center;
+    letter-spacing: 3px;
+    width: 100%;
+  }

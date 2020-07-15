@@ -62,9 +62,12 @@ displayRecipes = () => {
         <h3>{eachRecipe.recipe.label}</h3>
         <p>{eachRecipe.recipe.dietLabels}</p>
         <p>{eachRecipe.recipe.healthLabels}</p>
-        <a target="_blanc" href={eachRecipe.recipe.url}>
         <img className='recipe-image' src={eachRecipe.recipe.image} alt='img'/>
+        <a className='recipe-a' target="_blanc" href={eachRecipe.recipe.url}>
+        <p><b>{eachRecipe.recipe.source}</b></p>
         </a>
+        <p className='ingredients'>{eachRecipe.recipe.ingredientLines}</p>
+        {/* <p>{eachRecipe.recipe.totalTime}</p> */}
         {/* <p>
         {eachRecipe.recipe?.ingredients.map((eachIngredient) => { 
             return ( 
@@ -73,10 +76,6 @@ displayRecipes = () => {
             })
         };
         </p> */}
-        <p className='ingredients'>{eachRecipe.recipe.ingredientLines}</p>
-        <p>{eachRecipe.recipe.source}</p>
-        <p>{eachRecipe.recipe.totalTime}</p>
-
         </div>
         );
     })
@@ -87,23 +86,24 @@ refreshPage() {
 }
 
 
-
     render() {
+        console.log(this.state.recipeList)
         return (
             <section className = 'sections'>
+            <p className='recipe-header'>Healthy Recipes</p>
+
+            <div className='recipe-banner'>
+            </div>
                 <div className='recipesPage'>
-                    <h1>RECIPES</h1>
                     <form onSubmit = {this.submitRecipeSearch}>               
                         <label htmlFor="search"></label>
-                        {/* <input onChange={this.addingFoods} type="text" name="searchName" value = {this.state.searchName} placeholder='ex: grilled chicken' required /> */}
                         <input onChange={this.recipeSearch} className='searchBar' type="text" value ={this.state.query2}name="searchName" placeholder='Search for a food, brand, or ingredient' required />
                         <br />
                         <button type='submit' id='search'> Search</button>
                         <button onClick={this.refreshPage}>Refresh</button>
-
                     </form>
 
-                        {this.displayRecipes()}
+                    {this.displayRecipes()}
                 </div>
             </section>
 
