@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 
 class LogIn extends Component {
+    
     render() {
         return (
         <section className = 'sections'>
-            <div className = 'login'>
+            {/* <div className = 'login'>
                 <form>
                         <label for="uname"><b>Username</b></label>
                         <br />
@@ -19,8 +20,25 @@ class LogIn extends Component {
                         <button type="social-signin twitter">Log in with Twitter</button>
                         <button type="social-signin google">Log in with Google+</button>
                 </form>
-            </div>
-        </section>
+            </div> */}
+
+
+            <div class="body"></div>
+                <div class="grad"></div>
+                    <div class="login-header">
+                        <div>infiniT<span>Nutrition</span></div>
+                </div>
+                <br/>
+                <div class="login">
+                        <input type="text" placeholder="username" name="user"/>
+                        <br/>
+                        <input type="password" placeholder="password" name="password"/>
+                        <br/>
+                        <input type="button" value="Login"/>
+		</div>
+
+            
+    </section>
 
         );
     }
