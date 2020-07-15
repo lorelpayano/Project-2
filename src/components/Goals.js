@@ -12,7 +12,7 @@ class Goals extends Component {
                     <div class="containerGoals">
                         <article class="col col-3">
                         <h3>Eat right, feel good!</h3>
-                        <p class="text">With out ingredient tracker, you will be able to easily track what you are eating, making healthy eating so much easier!</p>
+                        <p class="text">With our ingredient tracker, you will be able to easily track what you are eating, making healthy eating so much easier!</p>
                         <img src={eating} width = '150' height = '100' alt='goal'/>
                         </article>
 

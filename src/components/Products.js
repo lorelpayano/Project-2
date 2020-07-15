@@ -73,6 +73,7 @@ class Products extends Component {
                 </select>
                 <br />
                 <button type='submit' id='add'>Add</button>
+                
                 </form> 
             </div>
 
