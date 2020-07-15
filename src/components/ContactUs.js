@@ -6,7 +6,7 @@ class ContactUs extends Component {
           <section className = 'sections'>
               <body>
 
-              <div class="container2">  
+              <div className="container2">  
                 <form id="contact">
                   <h3>Contact Us!</h3>
                   <h4>Contact us today, and get reply soon!</h4>
