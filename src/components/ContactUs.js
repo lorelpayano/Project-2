@@ -8,21 +8,28 @@ class ContactUs extends Component {
 
               <div class="container2">  
                 <form id="contact">
+
+                  <div className='contact-header'>
                   <h3>Contact Us!</h3>
-                  <h4>Contact us today, and get reply soon!</h4>
-                  <fieldset>
-                    <input placeholder="Your name" type="text" required autofocus></input>
+                  <h4>Contact us today, and get a reply soon!</h4>
+                  </div>
+
+                  <fieldset className='contact-inputs'>
+                    <input placeholder="First name" type="text" required autofocus></input>
                   </fieldset>
-                  <fieldset>
-                    <input placeholder="Your Email Address" type="email" required></input>
+                  <fieldset className='contact-inputs'>
+                    <input placeholder="Last name" type="text" required autofocus></input>
                   </fieldset>
-                  <fieldset>
-                    <input placeholder="Your Phone Number" type="tel" required></input>
+                  <fieldset className='contact-inputs'>
+                    <input placeholder="Your Email Address" type="text" required></input>
                   </fieldset>
-                  <fieldset>
+                  <fieldset className='contact-inputs'>
+                    <input placeholder="Your Phone Number" type="text" required></input>
+                  </fieldset>
+                  <fieldset className='contact-inputs'>
                     <textarea placeholder="Enter comments or concerns..."  required></textarea>
                   </fieldset>
-                  <fieldset>
+                  <fieldset className='contact-inputs'>
                     <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
                   </fieldset>
                 </form>

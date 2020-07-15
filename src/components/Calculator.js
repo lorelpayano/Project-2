@@ -62,18 +62,15 @@ refreshPage() {
     return (
         <section className = 'sections'>
             <div className='banner'>
-            <p className='calc-header'>Healthy lifestyles start here</p>
+                <p className='calc-header'>Healthy lifestyles start here</p>
             </div>
+
             <div className='section-calc'>
                 <div className='product-form'>
                 <Products getIngredient={this.getIngredient} foodData={this.state.foodData} />
                 </div>
                 <div>
                 <Nutrients foodData={this.state.foodData} />
-                </div>
-                <div className= 'calc-buttons'>
-                    <button onClick={this.submitting}> Submit</button>
-                    <button onClick={this.refreshPage}>Refresh</button>
                 </div>
                 {/* <div>
                 {
@@ -83,6 +80,11 @@ refreshPage() {
                 ))
                 }
                 </div> */}
+            </div>
+
+            <div className='calc-buttons-div'>
+                <button onClick={this.submitting} className='calc-buttons'> Submit</button>
+                <button onClick={this.refreshPage} className='calc-buttons'>Refresh</button>
             </div>
 
 

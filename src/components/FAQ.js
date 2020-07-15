@@ -7,7 +7,7 @@ class FAQ extends Component {
             <section className = 'sections'>
                 <div>
                     <div class='title'>
-                        FAQ's Page
+                        FAQ
                     </div>
                     <br/>
                     <div class="content">
@@ -25,10 +25,10 @@ class FAQ extends Component {
                             Once you go to the Recipes section of the page, you will then be able to type in any food you want in the search bar. Once you press submit, you will get results of diffrent meals along with the the ingredients needed and other information you can find.
                             </div>
                             <label class="question">
-                            Why was this page made?
+                            How often are meals updated?
                             </label>
                             <div class="answers">
-                            We made this page to promote healthy living and healthy eating habits!
+                            Recipes are updated weekly, and new menus are published every Monday evening. You will be notified via email when you can view meals.
                             </div>
                         </div>
                     </div>

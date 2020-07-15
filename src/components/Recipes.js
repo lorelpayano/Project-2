@@ -57,12 +57,14 @@ enterFood = (event) => {
 displayRecipes = () => {
     return this.state.recipeList.map((eachRecipe) => {
         return (
-        <div className='recipes' key={eachRecipe.recipe.url}>
+        <div className='recipes' style= {{display: 'flex', justifyContent: 'space-around', alignItems: 'center', margin:'auto 130px'}} key={eachRecipe.recipe.url}>
+
+        <img className='recipe-image' src={eachRecipe.recipe.image} alt='img'/>
+        <div >
 
         <h3>{eachRecipe.recipe.label}</h3>
         <p>{eachRecipe.recipe.dietLabels}</p>
         <p>{eachRecipe.recipe.healthLabels}</p>
-        <img className='recipe-image' src={eachRecipe.recipe.image} alt='img'/>
         <a className='recipe-a' target="_blanc" href={eachRecipe.recipe.url}>
         <p><b>{eachRecipe.recipe.source}</b></p>
         </a>
@@ -76,6 +78,7 @@ displayRecipes = () => {
             })
         };
         </p> */}
+        </div>
         </div>
         );
     })
@@ -93,15 +96,19 @@ refreshPage() {
             <p className='recipe-header'>Healthy Recipes</p>
 
             <div className='recipe-banner'>
+                    <div id='search-refresh'>
+                        <form onSubmit = {this.submitRecipeSearch}>               
+                            <label htmlFor="search"></label>
+                            <input onChange={this.recipeSearch} className='searchBar' type="text" value ={this.state.query2}name="searchName" placeholder='Search for foods or ingredients' required />
+                            <br />
+                            <button type='submit' className='recipe-buttons'> Search</button>
+                            <button onClick={this.refreshPage} class='recipe-buttons'>Refresh</button>
+                        </form>
+                    </div>
+
             </div>
                 <div className='recipesPage'>
-                    <form onSubmit = {this.submitRecipeSearch}>               
-                        <label htmlFor="search"></label>
-                        <input onChange={this.recipeSearch} className='searchBar' type="text" value ={this.state.query2}name="searchName" placeholder='Search for a food, brand, or ingredient' required />
-                        <br />
-                        <button type='submit' id='search'> Search</button>
-                        <button onClick={this.refreshPage}>Refresh</button>
-                    </form>
+
 
                     {this.displayRecipes()}
                 </div>
