@@ -73,8 +73,8 @@ enterExercise = (event) => {
 displayExercise = () => {
     return this.state.exerciseList?.map((eachExercise) => {
         return (
-        <div className='section-exercise' key={eachExercise.name}>
-        <p>Burned {eachExercise.nf_calories} calories</p>
+        <div className='display-exercise' key={eachExercise.name}>
+        <p>Estimated calories burned: <br /> <u>{eachExercise.nf_calories} cal</u></p>
         <p>{eachExercise.healthLabels}</p>
         </div>
         );
@@ -89,21 +89,24 @@ refreshPage() {
     render() {
         return (
             <section className = 'sections'>
+
                 <div className = 'section-exercise'>
                     <h1>Find out how many calories you burned!</h1>
-                    <form onSubmit = {this.submitExercise}>               
-                    <label htmlFor="search"></label>
+                    <form className='exercise-form' onSubmit = {this.submitExercise}>               
+                    <h3>{this.displayExercise()}</h3>
                     <br />
+                    <div className='exercise-search-area'>
+                    <label htmlFor="search"></label>
                     <input onChange={this.exerciseSearch} className='searchBar' type="text" value ={this.state.query3}name="exerciseSearch" placeholder='Search any exercise' required />
                     <br />
-                    <button type='submit' id='exerciseSearch'> Search</button>
-                    
-                    <button onClick={this.refreshPage}>Refresh</button>
+                    <button type='submit' id='exerciseSearch' className='exercise-buttons'> Search</button>
+                    <button onClick={this.refreshPage} className='exercise-buttons'>Refresh</button>
+                    </div>
 
                     </form> 
                     
-                <h3>{this.displayExercise()}</h3>
                 </div>
+
             </section>
 
         );

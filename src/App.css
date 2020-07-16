@@ -521,7 +521,7 @@ fieldset {
   }
 
 
-  /* Calculate table */
+  /* Calculate Page */
 
   .calc-table {
     width: 220px;
@@ -583,9 +583,66 @@ fieldset {
   text-align: center;
 }
 
+/* EXERCISE SECTION */
+
   .section-exercise {
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgb(216, 211, 211);
+    width: 700px;
+    height: 460px;
+    margin: -2% auto;
+    padding: 10px;
+    border-radius: 2px;
+  
   }
+
+  .exercise-buttons {
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color:#ffffff;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    color:#666666;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+  }
+  .exercise-buttons:hover {
+    background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    background-color:#f6f6f6;
+  }
+  .exercise-buttons:active {
+    position:relative;
+    top:1px;
+  }
+
+  .exercise-form {
+    margin: % auto;
+    /* z-index: 90; */
+  }
+
+  .display-exercise {
+    text-align: center;
+    color: rgb(8, 119, 8);
+    font-size: 19px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); */
+    /* background-color: rgb(238, 237, 237); */
+    border-radius: 9px;
+    width: 240px;
+    padding: 1px;
+    margin: auto;
+  }
+
+  .exercise-search-area {
+    margin: auto;
+    /* z-index: 100; */
+  }
+
 
   
 /* Testimonial CSS */
@@ -640,6 +697,7 @@ fieldset {
   width: 100%;
   height: 100px;
   float: left;
+  z-index: 99;
 }
 
 .testimonial {
@@ -836,10 +894,20 @@ fieldset {
   outline: none;
 }
 
+/* .signup-background {
+  background-image: url(./images/woodbackground.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 620px;
+  padding: 10px;
+} */
 
-#login-box {
+
+
+#signup-box {
   position: relative;
-  margin: 5% auto;
+  margin: auto;
   width: 600px;
   height: 400px;
   background: #FFF;
@@ -988,14 +1056,12 @@ button.social-signin.google {
 
 .product-form {
     /* border: 1px solid black; */
-  height: 100px;
-}
-  
+    height: 100px;
+  }
 
   .nutrient-disclaimer {
     font-size: 10px;
-  }
-
+}
   .banner {
     background-image: url(./images/Nutritionbanner\ copy.jpg);
     width: 100%;
