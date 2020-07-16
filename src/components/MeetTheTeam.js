@@ -1,12 +1,31 @@
 import React, { Component } from 'react';
+// import lorel from '../images/IMG_7909 copy.jpg';
+// import luis from '../images/IMG_0626.PNG
+// import kai from '../images/Image from iOS.jpg'
 
 
 class MeetTheTeam extends Component {
     render() {
         return (
-        <section className = 'sections'>
-            <div>
-                <body>
+            <section className = 'sections'>
+            <p className='team-header'>Meet The Team</p>
+            <div className='team'>
+                <div className= 'team-div'>
+
+                    <p>Lorel</p>
+                </div>
+                <div className= 'team-div'>
+                    <p>Luis</p>
+                </div>
+                <div className= 'team-div'>
+                    <p>Kai</p>
+                </div>
+
+
+
+
+            </div>
+                {/* <body>
                  <h1>Meet The Team Page</h1> 
                 <hr></hr>
                 <div className="row"> 
@@ -53,8 +72,7 @@ class MeetTheTeam extends Component {
                         </div> 
                     </div>
                 </div>
-                </body>
-            </div>
+                </body> */}
         </section>
 
         );

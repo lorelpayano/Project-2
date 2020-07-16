@@ -71,7 +71,7 @@ class Products extends Component {
                     <option value="g">g</option>
                 </select>
                 <br />
-                <button type='submit' id='add'>Add</button>
+                <button type='submit' id='add' className='calc-buttons'>Add</button>
                 
                 </form> 
                 {this.displayIngredients()}
