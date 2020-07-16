@@ -14,6 +14,7 @@ import Home from './components/Home'
 import './App.css'
 import Footer from './components/Footer';
 import Exercise from './components/Exercise'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   render() {
