@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import nutritionix from '../nutritionix/index'
+import { nutritionix } from '../nutritionix/index'
 import Nutrients from './Nutrients'
 import Products from './Products'
 // import banner from '../images/Nutritionbanner.png'
