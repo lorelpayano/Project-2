@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-// import lorel from '../images/IMG_7909 copy.jpg';
-// import luis from '../images/IMG_0626.PNG
-// import kai from '../images/Image from iOS.jpg'
+import lorel from '../images/lorel.png';
+import luis from '../images/luis.png'
+import kai from '../images/kai.jpg'
 
 
 class MeetTheTeam extends Component {
