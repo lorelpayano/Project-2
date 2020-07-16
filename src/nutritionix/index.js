@@ -64,4 +64,5 @@ const nutritionix = {
     }
 }
 
-module.exports = nutritionix;
+//module.exports = { nutritionix };
+export default nutritionix
