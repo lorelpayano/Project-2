@@ -1,7 +1,5 @@
 @media only screen and (max-width: 600px) {
-body {
-  background-color: red;
-}
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -75,6 +73,7 @@ ul {
   padding: 10px;
   margin: 6.3% auto 0 auto;
 }
+
 .sections {
   min-height: 460px;
   padding: 10px;
@@ -104,7 +103,7 @@ ul {
   border: 1px solid black;
   padding: 2px 20px;
   background-color: rgb(204, 204, 204);
-opacity: 0.8;
+  opacity: 0.8;
 }
 
 .section1 ul {
@@ -513,6 +512,7 @@ fieldset {
     margin: auto;
     padding-top: 20px;
   }
+
   /* .col{
     float:left;
   } */
@@ -599,9 +599,11 @@ fieldset {
   margin-bottom: 70px;
   z-index: 999;
 }
+
 .green-heading{
     color: #338C1A;
 }
+
 .heading:after {
   content: ' ';
   position: absolute;
@@ -647,7 +649,7 @@ fieldset {
   padding-top: 50px;
   padding-bottom: 50px;
   background-position: center;
-      background-size: cover;
+  background-size: cover;
   background-color: #c6ffc6;
 }
 
@@ -821,65 +823,12 @@ fieldset {
     width: 35px;
     height: 35px;
 }
+
   .products {
     list-style-type: none;
 
   }
 
-  /* .login {
-    border: 3px solid black;
-    width: 400px;
-    padding: 12px 350px;
-    margin: auto;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    text-align: center;
-    background-color: #ddd;
-    outline: none;
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px; 
-    
-  }
-
-.login button{
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    
-  } */
-
-  /* .signup {
-    border: 3px solid black;
-    width: 400px;
-    padding: 12px 350px;
-    margin: auto;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    text-align: center;
-    background-color: #ddd;
-    outline: none;
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-    
-  }
-
-  .signup button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-
-  } */
 
 /* Sign up Code below */
 
@@ -888,15 +837,6 @@ fieldset {
   outline: none;
 }
 
-/* body {
-  margin: 0;
-  padding: 0;
-  background: #DDD;
-  font-size: 16px;
-  color: #222;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-} */
 
 #login-box {
   position: relative;
@@ -1047,11 +987,11 @@ button.social-signin.google {
 }
 /* Ends here */
 
-  .product-form {
-  /* .product-form {
+.product-form {
     /* border: 1px solid black; */
     height: 100px;
   }
+
   .nutrient-disclaimer {
     font-size: 10px;
 }
@@ -1131,7 +1071,8 @@ button.social-signin.google {
     z-index: 2;
     text-align: center;
     /* letter-spacing: 3px; */
-    width: 100%;  }
+    width: 100%;  
+  }
 
   .searchBar {
     width: 320px;
@@ -1194,8 +1135,6 @@ button.social-signin.google {
     margin: auto;
     padding-bottom: 20px;
   }
-
-}
 
 
   @import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
@@ -1343,4 +1282,13 @@ button.social-signin.google {
 }
 
 
- 
+
+
+
+
+
+
+
+
+
+}
