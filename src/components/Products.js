@@ -66,7 +66,7 @@ class Products extends Component {
                     <option value="cup">cup</option>
                     <option value="oz">oz</option>
                     <option value="qt">qt</option>
-                    <option value="spoon">tbsp</option>
+                    <option value="tbsp">tbsp</option>
                     <option value="tsp">tsp</option>
                     <option value="g">g</option>
                 </select>

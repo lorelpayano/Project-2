@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import nutritionix from '../nutritionix'
+import nutritionix from '../nutritionix/index'
 
 
 const YOUR_APP_ID   = 'b9b8c82e'; // Your APP ID

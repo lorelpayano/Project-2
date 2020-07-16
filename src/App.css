@@ -583,6 +583,30 @@ fieldset {
   text-align: center;
 }
 
+.product-form {
+  /* border: 1px solid black; */
+  min-height: 100px;
+}
+
+.nutrient-disclaimer {
+  font-size: 10px;
+}
+.banner {
+  background-image: url(./images/Nutritionbanner\ copy.jpg);
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 0;
+}
+
+.calc-header {
+  position: absolute;
+  color: white;
+  font-size: 45px;
+  padding-left: 100px;
+}
+
 /* EXERCISE SECTION */
 
   .section-exercise {
@@ -894,16 +918,6 @@ fieldset {
   outline: none;
 }
 
-/* .signup-background {
-  background-image: url(./images/woodbackground.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 620px;
-  padding: 10px;
-} */
-
-
 
 #signup-box {
   position: relative;
@@ -1054,29 +1068,8 @@ button.social-signin.google {
 }
 /* Ends here */
 
-.product-form {
-    /* border: 1px solid black; */
-    height: 100px;
-  }
 
-  .nutrient-disclaimer {
-    font-size: 10px;
-}
-  .banner {
-    background-image: url(./images/Nutritionbanner\ copy.jpg);
-    width: 100%;
-    height: 150px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 0;
-  }
 
-  .calc-header {
-    position: absolute;
-    color: white;
-    font-size: 45px;
-    padding-left: 100px;
-  }
   .home-heading {
     font-size: 35px;
     text-align: center;
