@@ -102,7 +102,7 @@ refreshPage() {
                             <input onChange={this.recipeSearch} className='searchBar' type="text" value ={this.state.query2}name="searchName" placeholder='Search for foods or ingredients' required />
                             <br />
                             <button type='submit' className='recipe-buttons'> Search</button>
-                            <button onClick={this.refreshPage} class='recipe-buttons'>Refresh</button>
+                            <button onClick={this.refreshPage} className='recipe-buttons'>Refresh</button>
                         </form>
                     </div>
 

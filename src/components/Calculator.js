@@ -86,11 +86,6 @@ refreshPage() {
                 <button onClick={this.submitting} className='calc-buttons'> Submit</button>
                 <button onClick={this.refreshPage} className='calc-buttons'>Refresh</button>
             </div>
-
-
-
-            
-
         </section>
     );
   }
