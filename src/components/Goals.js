@@ -23,7 +23,7 @@ class Goals extends Component {
                         </article>
 
                         <article className="col col-3">
-                        <h3>Excercise more!</h3>
+                        <h3>Exercise more!</h3>
                         <p className="text">Get exercises that work for you and that you can track whenever you want!</p>
                         <img src={excercise} width = '150' height = '100' alt='goal' />
                         </article>

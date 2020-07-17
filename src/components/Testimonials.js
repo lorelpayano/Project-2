@@ -68,7 +68,7 @@ class Testimonials extends Component {
 
                     <div className="carousel-item">
                         <div className="testimonial4_slide">
-                            <img src={testimonial2} className="img-circle img-responsive" /><p>“Meal planning and discussing a healthy baseline diet (calories) were most helpful. I was able to add some food from food groups I’ve neglected and to be intentional about meals. Page is very approachable and knowledgeable. I trust it to have my best interest in mind.” </p>
+                            <img src={testimonial2} className="img-circle img-responsive" /><p>“Meal planning and discussing a healthy baseline diet (calories) were most helpful. I was able to add some food from food groups I’ve neglected and to be intentional about meals.  I trust it to have my best interest in mind.” </p>
                             <h4>McKenzie Chapman</h4>
                         </div>
                     </div>
