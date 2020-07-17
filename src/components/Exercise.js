@@ -91,7 +91,7 @@ refreshPage() {
             <section className = 'sections'>
 
                 <div className = 'section-exercise'>
-                    <h1>Find out how many calories you burned!</h1>
+                    <h3>Find out how many calories you burned!</h3>
                     <form className='exercise-form' onSubmit = {this.submitExercise}>               
                     <h3>{this.displayExercise()}</h3>
                     <br />
