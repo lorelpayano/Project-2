@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import lorel from '../images/lorel.png';
 import luis from '../images/luis.png'
-// import kai from '../images/kai.jpg'
+import kai from '../images/kai.png'
 
 
 class MeetTheTeam extends Component {
@@ -11,16 +11,19 @@ class MeetTheTeam extends Component {
             <p className='team-header'>Meet The Team</p>
             <div className='team'>
                 <div className= 'team-div'>
-                    <img className='team-pics' src={lorel} alt='teampics'/>
-                    <p>Lorel</p>
+                    <img className='team-pics' id='lorel' src={lorel} alt='teampics'/>
+                    <h5>Lorel Payano</h5>
+                    <p>Web Developer</p>
                 </div>
                 <div className= 'team-div'>
-                    <img className='team-pics' src={luis}alt='teampics'/>
-                    <p>Luis</p>
+                    <img className='team-pics' id='luis' src={luis}alt='teampics'/>
+                    <h5>Luis Dejesus</h5>
+                    <p>Web Developer</p>
                 </div>
                 <div className= 'team-div'>
-                    {/* <img className='team-pics' src={kai} alt='teampics'/> */}
-                    <p>Kai</p>
+                    <img className='team-pics' id='kai' src={kai} alt='teampics'/>
+                    <h5>Kai Quander</h5>
+                    <p>Web Developer</p>                
                 </div>
 
 
